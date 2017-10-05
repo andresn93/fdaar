@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Open+Sans:100,300,700);
 
 body{
 	background-color: #fff;
@@ -7,36 +7,71 @@ body{
 	width: 100%;
 }
 
-/*====================NAVBAR===================*/
+/* NAVBAR */
 .navbar-header{
-	  position: fixed;
+	position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
     width: 100%;
-    height: 60px;
+    height: 120px;
     background-color: #fff;
 }
 
-.logo a{
+.logo img{
+	width: 160px;
+	height: 120px;
+	margin-left: 40px;
+	margin-right: 50px;
+}
+
+/* NAV MENU */
+.navigation-menu{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	margin-top: 35px;
+}
+
+.navigation-menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation-menu ul, li{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+
+.navigation-menu a{
 	text-decoration: none;
-	line-height: 60px;
-	margin-left: 100px;
-	font-family: Merriweather Sans;
+	font-family: Open Sans;
 	font-weight: 300;
-	font-size: 28px;
-	letter-spacing: 0.2em;
+	min-width: 140px;
+	display: block;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
 	color: #000;
 }
+
+.navigation-menu a:hover{
+	background-color: #89e0b8;
+}
+
+/* DONATE BUTTON */
 
 .donate{
 	position: relative;
 	float:right;
-	margin-right: 100px;
-	margin-top: -48px;
+	margin-right: 40px;
+	margin-top: -30px;
 	padding: 5px 20px 5px 20px;
 	border-style: solid;
 	border-width: 1.5px;
+	border-radius: 2px;
 	background-color: #89e0b8;
 }
 
@@ -47,52 +82,6 @@ body{
 	font-size: 18px;
 	color: #000;
 }
-
-/*===============NAV MENU ==============*/
-
-.navigation-menu{
-	margin-top: -40px;
-	position: fixed;
-	width: 100%;
-	height: 60px;
-	text-align: center;
-	background-color: #515060;
-
-}
-
-.navigation-menu ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	margin-top: 5px;
-}
-
-.navigation-menu ul, li{
-	display: inline-block;
-	margin-right: 20px;
-}
-
-.navigation-menu a{
-	text-decoration: none;
-	font-family: Merriweather Sans;
-	font-weight: 300;
-	min-width: 140px;
-	display: block;
-	/*border-style: solid;
-	border-color: #000;
-	border-width: 1px;*/
-	height: 50px;
-	text-align: center;
-	line-height: 50px;
-	color: #fff;
-	background: #2f3036;
-	/*opacity: 0.7;*/
-}
-
-.navigation-menu a:hover{
-	background-color: #000;
-}
-
 
 /*=============CONTAINERS===============*/
 
@@ -105,92 +94,214 @@ body{
  }
 
 .firstContainer{
-	margin-top: 100px;
 	width: 100%;
-	height: 550px;
-	/*background-image:
+	height: 650px;
+	background-image:
 		linear-gradient(rgba(0, 0, 0, 0.3),
 		rgba(0, 0, 0, 0.3)),
-		url('/images/periodico.jpeg');*/
-	/*opacity: 0.80;*/
-	background-color: #89e0b8;
+		url('/images/sauce1.JPG');
+	opacity: 0.9;
 }
 
-/*.callAction h1{
-	font-family: Helvetica;
+.titleDesc h1{
+	font-family: Merriweather Sans;
+	letter-spacing: 0.2em;
 	color: #fff;
     margin: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 20px;
+    top: 56%;
+    left: 62%;
+    font-size: 28px;
     font-weight: 100;
-    transform: translate(-50%, -50%);
+}
+
+/* NUESTRO TRABAJO */
+.nuestro-container{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	padding: 40px 20px 40px 20px;
+	background: #eee;
+	margin: 0 auto;
+}
+
+h5{
+	font-family: Open Sans;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	margin-bottom: 40px;
+}
+
+/* CAROUSEL */
+.carousel-inner .item{
+	width: cover;
+	height: 600px;
+}
+
+.item img{
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.3),
+	rgba(0, 0, 0, 0.3));
+	opacity: 0.9;
+}
+
+/* INVOLUCRARSE */
+.involv{
+	background: #eee;
+	height: auto;
+	text-align: center;
+	padding: 40px 0 40px 0;
+	font-size: 12px;
+}
+
+.row{
+	clear: both;
+}
+
+div{
+	display: block;
+}
+
+.thumbnail{
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+.caption{
+	font-family: Open Sans;
+	text-align: left;
+	letter-spacing: 0.06em;
+	line-height: 1.8em;
+	font-size: 14px;
+}
+
+/* DONATE FORM */
+.donateContainer{
+	width: 100%;
+	height: 300px;
+	background-color: #fff;
+}
+
+h3 {
+	padding: 20px 0px 0px 20px;
+	color: #fff;
+}
+
+/*.form-container{
+	margin-left: 50px;
 }*/
-
-.secondContainer{
-	width: 100%;
-	height: 300px;
-	background-color: #000;
-	/*padding: 3em 20%;*/
-	padding: 0;
+#donate-form{
+	margin-top: 60px;
 }
 
-.thirdContainer{
-	width: 100%;
-	height: 550px;
-	background-color: #89e0b8;
-	padding-top: 0;
+#paypalbtn{
+	position: relative;
+	float: right;
 }
 
-.fourthContainer{
-	width: 100%;
-	height: 300px;
-	background-color: #000;
+.close-icon{
+	display: block;
+	float: right;
+	margin: 10px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
 }
 
+.close-icon p{
+	font-size: 20px;
+	margin: 10px;
+}
+
+
+/* BOTTOM FOOTER */
 .bottomContainer{
 	width: 100%;
-	height: 300px;
-	background-color: #515060;
+	height: 100px;
+	background-color: #383838;
+	position: relative;
+	bottom: 0;
 }
+
+.fa{
+	line-height: 100px;
+	color: #000;
+}
+
+.facebook-button{
+	display: block;
+	/*text-align: center;*/
+	float: right;
+	margin-right: 20px;
+}
+
+.cright{
+	float: left;
+	color: #fff;
+	line-height: 100px;
+	opacity: 0.8;
+	font-size: 11px;
+}
+
+
+
 
 
 /*==================== MEDIA ONLY ========================*/
-@media screen and (max-width: 680px){
+@media screen and (max-width: 980px){
 
-	.navbar-header{
-		/*display: none;*/
-	}
-
-	.logo a{
+	.logo img{
 		margin-left: 10px;
-		font-size: 20px;
+		margin-right: 26px;
 	}
 
 	.donate{
-		margin-right: 10px;
+		margin-right: 20px;
+	}
+
+	.navigation-menu ul, li{
+		display: inline-block;
+	}
+
+	.navigation-menu a{
+		font-size: 14px;
+		min-width: 10px;
+		margin-right: 20px;
 	}
 
 	.container-parallax{
 		background-attachment: scroll;
 	}
 
-	/*.navigation-menu{
+	.carousel-inner .item{
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width:780px){
+	.navigation-menu ul, li{
 		display: none;
-	}*/
+	}
 
-	.navigation-menu ul{
-		position: static;
+	.donate{
 		display: none;
 	}
 
-	.navigation-menu ul li{
-		display: block;
-		margin-bottom: 1px;
+	.titleDesc h1{
+		top: 56%;
+	    left: 40%;
+	    font-size: 20px;
 	}
 
-	.navigation-menu a{
-		width: 100%;
+}
+
+
+@media screen and (max-width: 400px){
+	.thumbnail{
+		margin-right: 40px;
+		margin-left: 40px;
 	}
+
 }
