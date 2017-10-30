@@ -1,0 +1,323 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Open+Sans:100,300,700);
+
+body{
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/* NAVBAR */
+.navbar-header{
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+}
+
+.logo img{
+	width: 160px;
+	height: 120px;
+	margin-left: 40px;
+	margin-right: 50px;
+}
+
+/* NAV MENU */
+.navigation-menu{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	margin-top: 35px;
+}
+
+.navigation-menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation-menu ul, li{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+
+.navigation-menu a{
+	text-decoration: none;
+	font-family: Open Sans;
+	font-weight: 300;
+	min-width: 140px;
+	display: block;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #000;
+}
+
+.navigation-menu a:hover{
+	background-color: #89e0b8;
+}
+
+/* DONATE BUTTON */
+
+.donate{
+	position: relative;
+	float:right;
+	margin-right: 40px;
+	margin-top: -30px;
+	padding: 5px 20px 5px 20px;
+	border-style: solid;
+	border-width: 1.5px;
+	border-radius: 2px;
+	background-color: #89e0b8;
+}
+
+
+.donate a{
+	text-decoration: none;
+	font-family: Merriweather Sans;
+	font-size: 18px;
+	color: #000;
+}
+
+/*=============CONTAINERS===============*/
+
+
+.container-parallax{
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+ }
+
+.firstContainer{
+	width: 100%;
+	height: 650px;
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.3),
+		rgba(0, 0, 0, 0.3)),
+		url('../images/sauce1.JPG');
+	opacity: 0.9;
+}
+
+.titleDesc h1{
+	font-family: Merriweather Sans;
+	letter-spacing: 0.2em;
+	color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 56%;
+    left: 62%;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+/* NUESTRO TRABAJO */
+.nuestro-container{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	padding: 40px 20px 40px 20px;
+	background: #eee;
+	margin: 0 auto;
+}
+
+h5{
+	font-family: Open Sans;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	margin-bottom: 40px;
+}
+
+/* CAROUSEL */
+.carousel-inner .item{
+	width: cover;
+	height: 600px;
+}
+
+.item img{
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.3),
+	rgba(0, 0, 0, 0.3));
+	opacity: 0.9;
+}
+
+/* INVOLUCRARSE */
+.involv{
+	background: #eee;
+	height: auto;
+	text-align: center;
+	padding: 40px 0 40px 0;
+	font-size: 12px;
+}
+
+.row{
+	clear: both;
+}
+
+div{
+	display: block;
+}
+
+.thumbnail{
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+.caption{
+	font-family: Open Sans;
+	text-align: left;
+	letter-spacing: 0.06em;
+	line-height: 1.8em;
+	font-size: 14px;
+}
+
+#donate3{
+	background-color: #89e0b8;
+}
+
+/* DONATE FORM */
+.donateContainer{
+	width: 100%;
+	height: 300px;
+	background-color: #fff;
+}
+
+h3 {
+	padding: 20px 0px 0px 20px;
+	color: #fff;
+}
+
+#donate-form{
+	margin-top: 60px;
+}
+
+#paypalbtn{
+	position: relative;
+	float: right;
+}
+
+#closeButton{
+	float: right;
+}
+
+
+/* BOTTOM FOOTER */
+.bottomContainer{
+	width: 100%;
+	height: 100px;
+	background-color: #383838;
+	position: relative;
+	bottom: 0;
+}
+
+.fa{
+	line-height: 100px;
+	color: #000;
+}
+
+.facebook-button{
+	display: block;
+	/*text-align: center;*/
+	float: right;
+	margin-right: 20px;
+}
+
+.cright{
+	float: left;
+	color: #fff;
+	line-height: 100px;
+	opacity: 0.8;
+	font-size: 11px;
+}
+
+/*===================DROPDOWN===================*/
+.dropdown{
+	float: right;
+	visibility: hidden;
+}
+/*==================== MEDIA ONLY ========================*/
+@media screen and (max-width: 980px){
+
+	.logo img{
+		margin-left: 10px;
+		margin-right: 26px;
+	}
+
+	.donate{
+		margin-right: 20px;
+	}
+
+	.navigation-menu ul, li{
+		display: inline-block;
+	}
+
+	.navigation-menu a{
+		font-size: 14px;
+		min-width: 10px;
+		margin-right: 20px;
+	}
+
+	.container-parallax{
+		background-attachment: scroll;
+	}
+
+	.carousel-inner .item{
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width:780px){
+	/*.firstContainer{
+		position: scroll;
+	}*/
+
+
+	.navigation-menu{
+		display: none;
+	}
+
+	.donate{
+		display: none;
+	}
+
+	.titleDesc h1{
+		top: 56%;
+	    left: 40%;
+	    font-size: 20px;
+	}
+
+/* DROPDOWN */
+
+		.dropdown{
+			visibility: visible;
+			margin-top: 50px;
+			margin-right: 20px;
+		}
+
+		.dropdown-menu li{
+			margin-top: 20px;
+			width: 220px;
+		}
+
+		#donate2{
+			margin-bottom: 20px;
+			background-color: #89e0b8;
+		}
+
+
+}
+
+
+@media screen and (max-width: 400px){
+	.thumbnail{
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+
+}
